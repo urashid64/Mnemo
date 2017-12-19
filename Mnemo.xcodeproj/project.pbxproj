@@ -13,6 +13,8 @@
 		9FDFC2D31FE4914F009F608B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FDFC2D21FE4914F009F608B /* Assets.xcassets */; };
 		9FDFC2D61FE4914F009F608B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDFC2D41FE4914F009F608B /* LaunchScreen.storyboard */; };
 		9FDFC2D91FE4914F009F608B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDFC2D81FE4914F009F608B /* main.m */; };
+		9FDFC2E11FE492F2009F608B /* NYMnemonic.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDFC2E01FE492F2009F608B /* NYMnemonic.m */; };
+		9FDFC2E41FE49C1C009F608B /* english.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9FDFC2E31FE49C1C009F608B /* english.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		9FDFC2D51FE4914F009F608B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FDFC2D71FE4914F009F608B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FDFC2D81FE4914F009F608B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9FDFC2DF1FE492F2009F608B /* NYMnemonic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYMnemonic.h; sourceTree = "<group>"; };
+		9FDFC2E01FE492F2009F608B /* NYMnemonic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYMnemonic.m; sourceTree = "<group>"; };
+		9FDFC2E31FE49C1C009F608B /* english.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = english.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +63,28 @@
 		9FDFC2C81FE4914F009F608B /* Mnemo */ = {
 			isa = PBXGroup;
 			children = (
+				9FDFC2E21FE49C1C009F608B /* languages */,
 				9FDFC2C91FE4914F009F608B /* AppDelegate.h */,
 				9FDFC2CA1FE4914F009F608B /* AppDelegate.m */,
 				9FDFC2CC1FE4914F009F608B /* ViewController.h */,
 				9FDFC2CD1FE4914F009F608B /* ViewController.m */,
 				9FDFC2CF1FE4914F009F608B /* Main.storyboard */,
+				9FDFC2DF1FE492F2009F608B /* NYMnemonic.h */,
+				9FDFC2E01FE492F2009F608B /* NYMnemonic.m */,
 				9FDFC2D21FE4914F009F608B /* Assets.xcassets */,
 				9FDFC2D41FE4914F009F608B /* LaunchScreen.storyboard */,
 				9FDFC2D71FE4914F009F608B /* Info.plist */,
 				9FDFC2D81FE4914F009F608B /* main.m */,
 			);
 			path = Mnemo;
+			sourceTree = "<group>";
+		};
+		9FDFC2E21FE49C1C009F608B /* languages */ = {
+			isa = PBXGroup;
+			children = (
+				9FDFC2E31FE49C1C009F608B /* english.txt */,
+			);
+			path = languages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +148,7 @@
 				9FDFC2D61FE4914F009F608B /* LaunchScreen.storyboard in Resources */,
 				9FDFC2D31FE4914F009F608B /* Assets.xcassets in Resources */,
 				9FDFC2D11FE4914F009F608B /* Main.storyboard in Resources */,
+				9FDFC2E41FE49C1C009F608B /* english.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FDFC2E11FE492F2009F608B /* NYMnemonic.m in Sources */,
 				9FDFC2CE1FE4914F009F608B /* ViewController.m in Sources */,
 				9FDFC2D91FE4914F009F608B /* main.m in Sources */,
 				9FDFC2CB1FE4914F009F608B /* AppDelegate.m in Sources */,
@@ -283,7 +301,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.Mnemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -296,7 +314,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.Mnemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
