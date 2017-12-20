@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,51 +20,69 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mnemonic" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXX-Gi-zB8">
-                                <rect key="frame" x="57" y="67" width="300" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mnemonic" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="gXX-Gi-zB8">
+                                <rect key="frame" x="47.666666666666657" y="91" width="280" height="100"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Xe7-mu-Upz"/>
+                                    <constraint firstAttribute="width" constant="280" id="neA-Zm-TCJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqC-7w-m1K">
-                                <rect key="frame" x="117" y="175" width="180" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="gqC-7w-m1K">
+                                <rect key="frame" x="102.66666666666669" y="199" width="170" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="HTn-gm-yb1"/>
+                                    <constraint firstAttribute="height" constant="30" id="hpZ-wS-DDQ"/>
+                                </constraints>
                                 <state key="normal" title="Create Mnemonic"/>
                                 <connections>
                                     <action selector="getMnemonic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jf6-Hp-SvX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEh-fP-kwE">
-                                <rect key="frame" x="122" y="261" width="170" height="170"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEh-fP-kwE">
+                                <rect key="frame" x="102.66666666666669" y="254" width="170" height="170"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="bII-Us-z48"/>
+                                    <constraint firstAttribute="height" constant="170" id="sYF-gN-CUZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ow-Dk-BT1">
-                                <rect key="frame" x="122" y="261" width="170" height="170"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6ow-Dk-BT1">
+                                <rect key="frame" x="102.66666666666669" y="254" width="170" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="bcC-TM-Qn6"/>
+                                    <constraint firstAttribute="height" constant="170" id="cjL-H1-Zvs"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Il3-MW-MdD">
-                                <rect key="frame" x="122" y="452" width="170" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="170" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Il3-MW-MdD">
+                                <rect key="frame" x="102.66666666666669" y="441" width="170" height="30"/>
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="0WZ-Sq-2pX"/>
+                                    <constraint firstAttribute="height" constant="30" id="xtR-Ul-EaT"/>
+                                </constraints>
                                 <state key="normal" title="Seed from Mnemonic"/>
                                 <connections>
                                     <action selector="genSeed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="95A-Wn-WVY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJ0-GT-f73">
-                                <rect key="frame" x="122" y="501" width="170" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJ0-GT-f73">
+                                <rect key="frame" x="102.66666666666669" y="488" width="170" height="30"/>
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="7RQ-2C-jdx"/>
+                                    <constraint firstAttribute="height" constant="30" id="E7X-YW-2Qe"/>
+                                </constraints>
                                 <state key="normal" title="Mnemonic QR Code"/>
                                 <connections>
                                     <action selector="genQRCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rhc-JN-5pm"/>
@@ -72,6 +90,20 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gqC-7w-m1K" firstAttribute="top" secondItem="gXX-Gi-zB8" secondAttribute="bottom" constant="8" id="2Rm-SR-ys0"/>
+                            <constraint firstItem="6ow-Dk-BT1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4fJ-um-usg"/>
+                            <constraint firstItem="gXX-Gi-zB8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="6UH-8q-Qgr"/>
+                            <constraint firstItem="gqC-7w-m1K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N5D-Sh-Z0v"/>
+                            <constraint firstItem="YEh-fP-kwE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nbe-Ta-hva"/>
+                            <constraint firstItem="YEh-fP-kwE" firstAttribute="top" secondItem="gqC-7w-m1K" secondAttribute="bottom" constant="25" id="Uji-FS-ztN"/>
+                            <constraint firstItem="DJ0-GT-f73" firstAttribute="top" secondItem="Il3-MW-MdD" secondAttribute="bottom" constant="17" id="YL9-bO-mAg"/>
+                            <constraint firstItem="6ow-Dk-BT1" firstAttribute="top" secondItem="gqC-7w-m1K" secondAttribute="bottom" constant="25" id="boK-gW-3cM"/>
+                            <constraint firstItem="Il3-MW-MdD" firstAttribute="top" secondItem="YEh-fP-kwE" secondAttribute="bottom" constant="17" id="cZe-Fd-sYx"/>
+                            <constraint firstItem="DJ0-GT-f73" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dDl-4C-XNl"/>
+                            <constraint firstItem="gXX-Gi-zB8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gp4-hZ-iC1"/>
+                            <constraint firstItem="Il3-MW-MdD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w9Z-mU-D42"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
